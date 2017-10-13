@@ -1,8 +1,8 @@
 ; repeated take a function and executes itself n times.
-;           
+;
 ; arguments: f -> any function
-;            n -> number of times 
-; 
+;            n -> number of times
+;
 ; output:    returns a function that takes any argument
 ; (f (f (f x)))
 
@@ -14,8 +14,5 @@
                 (f (loop (- n 1)))))
 
         (if (= n 0)
-           x 
+           x
           (loop n))))
-
-
-
